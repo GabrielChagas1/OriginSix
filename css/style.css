@@ -25,3 +25,42 @@ a{
   --body-color: hsl(0 0% 98%);
 }
 
+/* Base */
+body{
+  font: 400 1rem "DM Sans", sans-serif;
+  color: var(--text-color);
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+h2{
+  font: 700 1.875rem 'Poppins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+.button{
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 3.5rem;
+  border-radius: 4px;
+  font: 500 1rem "DM Sans", sans-serif;
+  transition: background .3s;
+}
+
+.button:hover{
+  background: var(--base-color-alt);
+}
+
+.divider-1{
+  height: 1px;
+  background: linear-gradient(
+    270deg, 
+    hsla(var(--hue), 36%, 57%, 1) 0%, 
+    hsla(var(--hue), 65%, 88%, .34) 100%
+  );
+}
+
