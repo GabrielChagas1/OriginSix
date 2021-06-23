@@ -64,3 +64,52 @@ h2{
   );
 }
 
+/* layout */
+
+#header{
+  border-bottom: 1px solid #E4E4E4;
+  margin-bottom: 2rem;
+  display: flex;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: var(--body-color);
+  width: 100%;
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+}
+
+.logo{
+  font: 700 1.31rem 'Poppins', sans-serif;
+  color: var(--title-color);
+}
+
+.logo span{
+  color: var(--base-color);
+}
+
+.container{
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.section{
+  padding: 5rem 0;
+}
+
+.grid{
+  display: grid;
+  gap: 2rem;
+}
+
+main{
+  margin-top: var(--header-height);
+}
