@@ -67,6 +67,20 @@ h2{
 
 /* layout */
 
+.container{
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.section{
+  padding: 5rem 0;
+}
+
+.grid{
+  display: grid;
+  gap: 2rem;
+}
+
 #header{
   border-bottom: 1px solid #E4E4E4;
   margin-bottom: 2rem;
