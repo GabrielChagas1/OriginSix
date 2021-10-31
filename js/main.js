@@ -1,5 +1,4 @@
 //* Código para abrir e fechar o menu do site
-
 const nav = document.querySelector('#header nav');
 const toggle = document.querySelectorAll('nav .toggle');
 
@@ -10,7 +9,6 @@ toggle.forEach((item) =>{
 });
 
 //* código para fechar o menu, quando um item é clicado
-
 const links = document.querySelectorAll('nav ul li a');
 
 links.forEach(item => {
@@ -20,7 +18,6 @@ links.forEach(item => {
 });
 
 //* quando o usuário der o scroll, ele adiciona a classe scroll no header
-
 const header = document.querySelector('#header');
 
 const navHeight = header.offsetHeight;
