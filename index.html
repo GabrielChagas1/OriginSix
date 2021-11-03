@@ -6,6 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OriginSix</title>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/> 
   <link rel="stylesheet" href="./assets/fonts/style.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,15 +104,57 @@
    <div class="divider-1"></div>
 
    <section class="section" id="testimonials">
-    <div class="container grid">
+    <div class="container">
       <header>
         <h2 class="title">Depoimentos de quem já passou por aqui</h2>
       </header>
-      <div class="testimonials"></div>
+      <div class="testimonials swiper">
+        <div class="swiper-wrapper">
+          <div class="testimonial swiper-slide">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium mollitia inventore, neque illum nostrum facere quis nulla deleniti eveniet suscipit quod obcaecati provident officiis quidem eaque vitae impedit. Dolor, facilis.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="#">
+                Wanessa Souza
+              </cite>
+            </blockquote>
+          </div>
+          <div class="testimonial swiper-slide">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium mollitia inventore, neque illum nostrum facere quis nulla deleniti eveniet suscipit quod obcaecati provident officiis quidem eaque vitae impedit. Dolor, facilis.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/women/84.jpg" alt="#">
+                  Franciele Venega
+              </cite>
+            </blockquote>
+          </div>
+          <div class="testimonial swiper-slide">
+            <blockquote>
+              <p>
+                <span>&ldquo;</span>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium mollitia inventore, neque illum nostrum facere quis nulla deleniti eveniet suscipit quod obcaecati provident officiis quidem eaque vitae impedit. Dolor, facilis.
+              </p>
+              <cite>
+                <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="#">
+                Bill Youton 
+              </cite>
+            </blockquote>
+          </div>
+        </div>
+        <!-- If we need pagination --> 
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
    </section>
   </main>
 
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
