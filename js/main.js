@@ -18,17 +18,16 @@ links.forEach(item => {
 });
 
 //* quando o usuário der o scroll, ele adiciona a classe scroll no header
-const header = document.querySelector('#header');
+function changeHeaderWhenScroll(){
+  const header = document.querySelector('#header');
+  const navHeight = header.offsetHeight;
 
-const navHeight = header.offsetHeight;
-
-window.addEventListener("scroll", () => {
   if(window.scrollY >= navHeight){
     header.classList.add("scroll");
   }else{
     header.classList.remove("scroll");
   }
-});
+}
 
 // Slider
 const swiper = new Swiper('.swiper', {
@@ -38,7 +37,7 @@ const swiper = new Swiper('.swiper', {
   },
   mousewheel: true,
   keyboard: true
- 
+
 });
 
 // ScrollReveal: mostrar elementos quando der scroll na página
@@ -56,6 +55,24 @@ scrollReveal.reveal(
     #services header, #services .card,
     #testimonials header, #testimonials .testimonials
     #contact .text, #contact .links
+    footer .brand, footer .social
   `,
   {interval: 100}
-)
+);
+
+// back-to-top
+function backToTop(){
+  let button = document.querySelector('.back-to-top');
+  window.addEventListener('scroll', () =>{
+    if(window.scrollY >= 560) button.classList.add('show')
+    else  button.classList.remove('show');
+  });
+}
+
+
+
+// When Scroll
+window.addEventListener("scroll", () => {
+  changeHeaderWhenScroll();
+  backToTop();
+});
