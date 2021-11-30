@@ -36,14 +36,20 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination'
   },
   mousewheel: true,
-  keyboard: true
+  keyboard: true,
+  breakpoints:{
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
 
 });
 
 // ScrollReveal: mostrar elementos quando der scroll na página
 const scrollReveal = ScrollReveal({
   origin: 'top',
-  distance: '30px',
+  distance: '72px',
   duration: 700,
   reset: true
 });
@@ -74,7 +80,7 @@ const sections = document.querySelectorAll('section[id]');
 
 function activateMenuAtCurrentSection(){
 
-
+  
   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4;
   
   for(const section of sections){
