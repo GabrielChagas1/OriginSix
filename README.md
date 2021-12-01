@@ -6,7 +6,7 @@
 
 ---
 <h3 align="center">
-  <a href="https://GabrielChagas1.github.io/originsix">Acessar demonstração</a>
+  <a href="https://origin-six-psi.vercel.app/">Acessar demonstração</a>
 </h3>
 
 ## Índice
